@@ -1,11 +1,10 @@
 #friends-display-link {
   text-align: center;
   display: block;
-  width: 100%;
   padding: 10px 0px;
   background-color: #fafafa;
   font-size: 16px;
-  margin: 20px 0px 10px 0px;
+  margin-bottom: 15px;
 }
 
 #friends-display-link i {
@@ -17,7 +16,7 @@
 }
 .friends-screen__channel {
   margin-top: 15px;
-  border-top: 1px solid var(--pink);
+  border-top: var(--main-border);
   padding-top: 15px;
 }
 .friends-screen__channel-header {
