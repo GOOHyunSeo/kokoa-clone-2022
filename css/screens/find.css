@@ -89,3 +89,19 @@
 .open-post__heat-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  from {
+    color: white;
+    transform: none;
+  }
+  to {
+    color: tomato;
+    transform: scale(1.5);
+  }
+}
+
+.open-post__heat-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s ease-in-out infinite;
+}

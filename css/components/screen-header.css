@@ -13,12 +13,24 @@
   margin-left: 25px;
   color: pink;
 }
-.screen-header__cogicon{
+.screen-header__cogicon {
   position: relative;
 }
-.screen-header__dot{
+.screen-header__dot {
   display: block;
   position: absolute;
-  right:-7px;
-  bottom:20px;
+  right: -7px;
+  bottom: 20px;
+}
+
+@keyframes rotateCog {
+  fron {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 2s linear infinite;
 }
