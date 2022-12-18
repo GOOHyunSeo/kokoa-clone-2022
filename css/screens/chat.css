@@ -70,7 +70,6 @@
 .message__info {
   display: flex;
   align-items: flex-end;
-  animation: fadeIn-side 0.4s linear;
 }
 .message__bubble {
   background-color: white;
@@ -79,6 +78,14 @@
   border-top-left-radius: 0px;
   margin-right: 5px;
   font-size: 18px;
+}
+.first-buuble {
+  animation: fadeIn-side 0.4s linear;
+}
+.second-buuble {
+  transform: translateX(-500px);
+  animation: fadeIn-side 0.4s linear forwards;
+  animation-delay: 1s;
 }
 
 .message-row--own {
@@ -101,7 +108,7 @@
   animation-delay: 0.5s;
 }
 .message-row--own .message__bubble {
-  background-color: rgb(172, 65, 172);
+  background-color: rgb(199, 86, 199);
   border-top-left-radius: 12px;
   border-top-right-radius: 0px;
   margin-left: 10px;
@@ -152,11 +159,12 @@
 }
 
 .reply__column:last-child button {
-  background-color: rgb(172, 65, 172);
+  background-color: rgb(199, 86, 199);
   border: none;
   width: 30px;
   height: 30px;
   border-radius: 15px;
+  color: white;
 }
 
 .reply__column button:focus,
